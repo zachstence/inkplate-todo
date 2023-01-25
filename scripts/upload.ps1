@@ -13,9 +13,10 @@ function Upload {
     try {
         Push-Location .\inkplate-todo
         
-        $output = python ..\Inkplate-micropython\pyboard.py --device $port -f cp `
-            main.py                 `
-            :
+        python ..\Inkplate-micropython\pyboard.py --device $port -f cp main.py :main.py
+        python ..\Inkplate-micropython\pyboard.py --device $port -f mkdir secret
+        python ..\Inkplate-micropython\pyboard.py --device $port -f cp secret/network.json :secret/network.json
+        
     } finally {
         Pop-Location
     }
