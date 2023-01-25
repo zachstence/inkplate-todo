@@ -1,5 +1,19 @@
 {
+    "python.linting.enabled": true,
+    "python.jediEnabled": false,
+
+    // Loaded Stubs:  esp32-micropython-1.18.0 
+    "python.autoComplete.extraPaths": ["inkplate-todo\\.micropy\\esp32-micropython-1.18.0\\frozen", "inkplate-todo\\.micropy\\BradenM-micropy-stubs-4f5a52a\\frozen", "inkplate-todo\\.micropy\\esp32-micropython-1.18.0\\stubs", "inkplate-todo\\.micropy\\inkplate-todo"],
+    "python.autoComplete.typeshedPaths":  ["inkplate-todo\\.micropy\\esp32-micropython-1.18.0\\frozen", "inkplate-todo\\.micropy\\BradenM-micropy-stubs-4f5a52a\\frozen", "inkplate-todo\\.micropy\\esp32-micropython-1.18.0\\stubs", "inkplate-todo\\.micropy\\inkplate-todo"],
+    "python.analysis.typeshedPaths":  ["inkplate-todo\\.micropy\\esp32-micropython-1.18.0\\frozen", "inkplate-todo\\.micropy\\BradenM-micropy-stubs-4f5a52a\\frozen", "inkplate-todo\\.micropy\\esp32-micropython-1.18.0\\stubs", "inkplate-todo\\.micropy\\inkplate-todo"],
+
+    "python.linting.pylintEnabled": true,
     "python.analysis.extraPaths": [
-        "./Inkplate-micropython"
+        "./Inkplate-micropython",
+
+        "inkplate-todo\\.micropy\\esp32-micropython-1.18.0\\frozen",
+        "inkplate-todo\\.micropy\\BradenM-micropy-stubs-4f5a52a\\frozen",
+        "inkplate-todo\\.micropy\\esp32-micropython-1.18.0\\stubs",
+        "inkplate-todo\\.micropy\\inkplate-todo"
     ]
 }
