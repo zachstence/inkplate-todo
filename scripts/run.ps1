@@ -6,4 +6,4 @@ if (!$port) {
 }
 
 # Run main.py on the Inkplate
-python .\Inkplate-micropython\pyboard.py --device $port .\inkplate-todo\main.py
+python .\Inkplate-micropython\pyboard.py --device $port .\inkplate-todo\src\main.py

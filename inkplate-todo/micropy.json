@@ -1,0 +1,14 @@
+{
+    "name": "inkplate-todo",
+    "stubs": {
+        "esp32-micropython-1.18.0": "1.4.3"
+    },
+    "dev-packages": {
+        "micropy-cli": "*"
+    },
+    "packages": {},
+    "config": {
+        "vscode": true,
+        "pylint": true
+    }
+}
