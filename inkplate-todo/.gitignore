@@ -145,3 +145,11 @@ dmypy.json
 .micropy/
 !micropy.json
 !src/lib
+
+
+
+#########
+
+
+
+config.json

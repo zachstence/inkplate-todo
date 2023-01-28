@@ -1,11 +1,9 @@
 from inkplate6_COLOR import Inkplate
 
-from server import Server
+from config import config
 
 if __name__ == "__main__":
-    server = Server()
+    print(config)
 
     inkplate = Inkplate()
     inkplate.begin()
-
-    inkplate.display()
