@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     for l, line in enumerate(text.splitlines()):
         line_y = start_y + l * text_height
-        grid = fonts.to_pixels("arial24", line)
+        grid = fonts.to_pixels("courier24", line)
         for r, row in enumerate(grid):
             for c, pixel in enumerate(row):
                 if pixel:
