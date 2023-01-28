@@ -1,3 +1,5 @@
+from inkplate6_COLOR import Inkplate
+
 class Task:
     id: str
     complete: bool
