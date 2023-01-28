@@ -6,7 +6,9 @@
     "dev-packages": {
         "micropy-cli": "*"
     },
-    "packages": {},
+    "packages": {
+        "urequests": "*"
+    },
     "config": {
         "vscode": true,
         "pylint": true

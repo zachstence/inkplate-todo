@@ -1,9 +1,5 @@
-from inkplate6_COLOR import Inkplate
-
-from config import config
+from lib import clickup
 
 if __name__ == "__main__":
-    print(config)
-
-    inkplate = Inkplate()
-    inkplate.begin()
+    tasks = clickup.get_tasks()
+    print(tasks)

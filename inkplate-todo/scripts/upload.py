@@ -21,7 +21,7 @@ def get_files():
     for path, _, files in os.walk(INKPLATE_TODO_SRC_DIR):
         for name in files:
             abs_path = os.path.join(path, name)
-            device_path = os.path.relpath(abs_path, INKPLATE_TODO_SRC_DIR)
+            device_path = os.path.relpath(abs_path, INKPLATE_TODO_SRC_DIR).replace('\\', '/')
             out.append([ abs_path, device_path ])
     
     return out

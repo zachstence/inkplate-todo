@@ -4,6 +4,7 @@
         "password": ""
     },
     "clickup": {
+        "apiToken": "",
         "listId": ""
     }
 }
