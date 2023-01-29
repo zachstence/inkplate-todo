@@ -11,11 +11,13 @@ if __name__ == "__main__":
     start_y = 10
     text_height = 24
 
-    text = "abcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n0123456789-=\n`[]\\;',./\n~\{\}|:\"<>?"
+    # text = "abcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n0123456789-=\n`[]\\;',./\n~{}|:\"<>?\n"
+    text = "\uf242"
 
     for l, line in enumerate(text.splitlines()):
         line_y = start_y + l * text_height
-        grid = fonts.to_pixels("aristotelica24", line)
+        grid = fonts.char_to_pixels("hacknf24", line)
+
         for r, row in enumerate(grid):
             for c, pixel in enumerate(row):
                 if pixel:

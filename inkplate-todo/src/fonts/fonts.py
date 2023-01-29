@@ -76,9 +76,8 @@ def _load_font(fontname: str):
 
 def char_to_pixels(fontname: str, char: str) -> list[list[bool]]:
     font = _load_font(fontname)
-    _char = char[0]
 
-    data, height, width = font.get_ch(_char)
+    data, height, width = font.get_ch(char)
     reverse = font.reverse()
     format = "hmap" if font.hmap() else "vmap"
     pixels = _render(data, height, width, reverse, format)
@@ -106,9 +105,9 @@ def print_pixels(pixels: list[list[bool]]) -> None:
     for row in pixels:
         for pixel in row:
             if pixel:
-                print("█", end="")
+                print("#", end="")
             else:
-                print("░", end="")
+                print('.', end='')
         print()
 
 if __name__ == "__main__":
